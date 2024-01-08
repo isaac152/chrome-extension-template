@@ -1,6 +1,6 @@
-import { useState } from "react"
+import React, { useState } from "react"
 
-function IndexOptions() {
+export default function Home(): React.JSX.Element {
   const [data, setData] = useState("")
 
   return (
@@ -13,10 +13,8 @@ function IndexOptions() {
       <h1>
         Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
       </h1>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <footer>Crafted by @PlamoHQ</footer>{" "}
+      <input onChange={(e) => { setData(e.target.value); }} value={data} />
+      <footer>Crafted by @PlamoHQ</footer>
     </div>
   )
 }
-
-export default IndexOptions
