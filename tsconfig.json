@@ -8,6 +8,6 @@
     },
     "baseUrl": ".",
     "jsx": "react",
-    "strict": true,
+    "strict": true
   }
 }
